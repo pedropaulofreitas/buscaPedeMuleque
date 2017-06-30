@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <div id="listaFuzzy">
+            <h2 class="header"><%= fields.nome %></h2>
+
+              <ul>
+              <%
+              var x;
+              i = 0;
+              titulo = Object.keys(fields);
+              for (x in fields){  %>
+                <li ><h3 class="header2"><%= titulo[i] %></h3></li>
+                <p1><%= fields[x] %></p1>
+              <%
+              i++;
+              } %>
+            </ul>
+      </div>
+    </div>
+  </body>
+</html>
